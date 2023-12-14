@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.custom-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px; /* Cela arrondit les coins du formulaire */
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-section label {
+  display: block;
+  color: #333; /* Dark text for labels */
+  margin-bottom: 5px;
+}
+
+.custon-form select,
+.custom-form input[type="text"],
+.custom-form input[type="email"],
+.custom-form input[type="tel"],
+.custom-form textarea {
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal
+}
+
+.form-section select,
+.form-section input[type="text"],
+.form-section input[type="tel"],
+.form-section input[type="email"] {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  padding: 10px;
+  background-color: #1C5C6D;
+  opacity: 0.276;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px;
+}
+
+/* Style for dropdown fields */
+.form-section select {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1C5C6D;
+  opacity: 0.276;
+  color: #333;
+}
+
+/* Personal information section styling */
+.personal-info h2 {
+  color: #707070;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Submit button styling */
+.submit-button {
+    background: url('/image/login.png') no-repeat center center;
+    border: none;
+    cursor: pointer;
+    width: 150px; /* Taille de votre image */
+    height: 50px; /* Taille de votre image */
+}
+
+.submit-button:hover {
+    /* Ajoutez ici l'effet de survol, comme un changement d'image ou une opacité */
+    opacity: 0.8;
+}
+
+.submit-button img {
+    display: none; /* Cache l'image par défaut pour utiliser le fond du bouton */
+}

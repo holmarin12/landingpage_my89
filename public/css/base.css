@@ -1,0 +1,173 @@
+/* base.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    background-color: #f2f2f2;
+}
+
+
+.content-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.main-section .content-container {
+    max-width: 1460px;
+    margin: 0 auto;
+    text-align: left; 
+}
+
+.main-section .logo-etudiant {
+    /* Style pour le logo */
+    max-width: 100px;
+    display: block;
+    margin: 40px;
+}
+
+.main-section .title-with-image {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.main-section .title-container {
+    position: relative;
+}
+
+.main-section .title-container .livres-image {
+    position: absolute; 
+    left: 0; 
+    bottom: 0;
+    max-width: 100px;
+}
+
+/* Style général du site */
+.main-section h1 {
+    max-width: 1460px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 90px;
+    font-weight: bold;/**/
+    color: #707070;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Style sous-titre */
+.main-section .sous-titre {
+    max-width: 1460px; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 55px; 
+    font-weight: bold;
+    color: #707070;
+    text-align: center;
+    margin: 0;
+    padding: 80px 0;
+}
+
+/* Style boutons login et registry */
+.logo-connexion {
+    display: flex; 
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.logo-connexion img {
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-connexion img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Style présentation */
+.main-section .welcome-text-1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: bold; 
+    color: #707070;
+    text-align: center;
+    margin: 40px; 
+}
+
+.main-section .welcome-text-2 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 35px;
+    font-weight: normal;
+    color: #707070;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Style logo central */
+.content-container .logo.central {
+    justify-content: center; 
+    margin-top: 20px;
+    max-width: 100px;
+}
+
+.main-section .logo-central img {
+    max-width: 100%;
+    margin: 10px;
+    margin: 10px;
+}
+
+/* Style général du grand carré, text et logos */
+
+.main-section .content-with-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+}
+
+/* Style pour le conteneur de texte */
+.main-section .content-with-logo .text-container {
+    flex-grow: 1;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    color: #707070;
+    padding-right: 20px; 
+}
+
+/* Ajuste du style du logo-carre si nécessaire pour l'aligner avec le texte */
+.main-section .content-with-logo .logo-carre {
+    position: relative;
+    bottom: 0;
+    right: 50%; 
+    width: 10%;
+    overflow: visible;
+    flex: 0 1 auto;
+}
+
+.main-section .content-with-logo .logo-carre img {
+    max-width: 100%; /* ou une valeur spécifique comme 200px */
+    height: auto;
+    /*width: 1600%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    right: -50%;*/
+}
+
+.main-section .content-with-logo .logo-gauche-carre {
+    position: relative;
+    width: auto;
+    overflow: visible;
+    flex: 0 1 auto;
+    margin-right: 20px;
+}
+
+.main-section .content-with-logo .logo-gauche-carre img {
+    max-width: 60%;
+    height: auto;
+}

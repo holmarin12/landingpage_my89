@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}L'Application Étudiante de l'École 89{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="main-section">
+    <div class="content-container">
+        <img src="{{ asset('images/etudiant.png') }}" alt="Logo étudiant" class="logo-etudiant">
+        <div class="title-with-image">
+            <div class="title-container">
+                <h1>L'Application Étudiante de l'École 89 !</h1>
+                <img src="{{ asset('images/livres.png') }}" alt="Livres" class="livres-image">
+            </div>
+            <img src="{{ asset('images/main.png') }}" alt="Main Image" class="main-image">
+        </div>
+            <div class="sous-titre">
+                Transformez Votre Expérience Éducative
+            </div>
+        <div class="logo-connexion">
+            <img src="{{ asset('images/login.png') }}" alt="Se connecter" class="logo-faux-bouton">
+            <img src="{{ asset('images/registry.png') }}" alt="S'inscrire" class="logo-faux-bouton">
+        </div>
+        <p class="welcome-text-1">
+            Des Solutions Personnalisées Pour les Étudiants 
+            Ambitieux
+        </p>
+        <p class="welcome-text-2">
+            Bienvenue sur la plateforme qui va révolutionner votre vie <br>
+            étudiante à l'École 89! Découvrez comment notre application <br>
+            innovante répond à vos besoins, envies et aspirations.
+        </p>
+        <div class="logo-central">
+            <img src="{{ asset('images/logocentral.png') }}" alt="Logo central" class="logo-central">
+        </div>
+        <div class="content-with-logo">
+            <div class="text-container">
+                <p>Ce que notre application peut<br>faire pour vous :</p>
+            </div>
+             <div class="logo-gauche-carre">
+                <img src="{{ asset('images/logogauchecarre.png') }}" alt="logo gauche carre">
+            </div>
+            <div class="logo-carre">
+                <img src="{{ asset('images/grandcarre.png') }}" alt="Grand carre">
+            </div>
+        </div>
+        {% include 'formulaire.html.twig' %}
+    </div>
+    </div>
+    </div>
+</div>
+{% endblock %}
